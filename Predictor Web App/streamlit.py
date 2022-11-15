@@ -13,7 +13,7 @@ st.write("Model is based off data from Februrary 17, 2021")
 
 model = pickle.load(open("Tetrio_Model.sav", 'rb'))
 
-data = pd.read_csv("TetrioAll.csv")
+data = pd.read_csv("../TetrioAll.csv")
 data.drop("Unnamed: 0", axis=1, inplace=True)
 
 model_data = data.loc[:,"gamesplayed":"vs"]
